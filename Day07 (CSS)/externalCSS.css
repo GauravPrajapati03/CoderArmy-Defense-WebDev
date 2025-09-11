@@ -1,0 +1,87 @@
+/* Universal Selector */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Element Selector */
+h1 {
+    color: red;
+    text-align: center;
+}
+
+p {
+    color: green;
+}
+
+ol {
+    font-size: 1.5em;
+    padding: 10px 30px;
+    border: 2px solid black;
+}
+
+/* Class Selector */
+.first {
+    color: blue;
+}
+
+.last {
+    color: rgb(4, 159, 58);
+}
+
+/* ID Selector */
+#myid {
+    color: magenta;
+    font-size: 24px;
+}
+
+/* Group Selector */
+/* h1, h2 {
+    text-align: center;
+} */
+
+/* Child Selector */
+div > h3 {
+    font-size: 1.25em;
+}
+
+/* Descendant Selector */
+div p {
+    font-size: 1.8em;
+}
+
+/* Adjacent Selector */
+h2 + h4 {
+    color: red;
+}
+
+/* Attribute Selector */
+/* a[href="https://www.google.com"] {
+    color: red;
+} */
+
+a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: gray;
+}
+
+/* Pseudo Class Selector */
+a:visited {
+    color: rgb(10, 240, 10);
+}
+
+a:active {
+    color: blue;
+}
+
+/* Pseudo Element Selector */
+p::first-letter {
+    font-size: 2em;
+}
+
+p::selection {
+    background-color: rgb(253, 253, 60);
+}
+

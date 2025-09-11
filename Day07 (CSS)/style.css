@@ -1,0 +1,42 @@
+#px {
+    font-size: 18px;
+    color: rgba(241, 162, 14, 0.803);
+}
+
+#em {
+    font-size: 2em;
+    color: #008000;
+}
+
+#rem {
+    font-size: 2.5rem;
+    color: blue;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+#vh {
+    font-size: 2vh;
+    color: yellow;
+}
+
+#vw {
+    font-size: 2vw;
+    color: orange;
+}
+
+#percent {
+    font-size: 150%;
+    color: purple;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+#heading {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Story+Script&display=swap"
+        rel="stylesheet">
+        
+</head>
+
+<body>
+
+    <h1 id="heading">CSS Units</h1>
+    <p id="px">px - one pixel is 1/96th of an inch but it depends on the device's screen size</p>
+    <p id="em">em - relative to the font size of the parent element</p>
+    <p id="rem">rem - relative to the font size of the root element</p>
+    <p id="vh">vh - relative to the height of the viewport</p>
+    <p id="vw">vw - relative to the width of the viewport</p>
+    <p id="percent">% - relative to the parent element</p>
+    <p>cm</p>
+    <p>mm</p>
+    <p>in</p>
+    <p>pt</p>
+    <p>pc</p>
+
+    <hr>
+
+    <h2>Memory Usage</h2>
+    <pre>r - red (0 - 255) g - green (0 - 255) b - blue (0 - 255) a - alpha (0 - 1) 
+    eg: rgba(255, 0, 0, 0.5)
+    8 - bits (0 - 00000000, 255 - 11111111)
+    Total size: 3 bytes - rgb(255, 0, 0) = 24 bits
+
+    rgb(r, g, b) - 3bytes
+    rgba(r, g, b, a) - 4bytes
+    hsl(h, s, l) - 3bytes
+    hsv(h, s, l, a) - 4bytes
+
+
+    #hex - 3bytes - 0 - 9, A - F -> 16  eg  #008000 -> 00-red, green-80, blue-00
+
+    #hexa - 4bytes - eg #00800080 -> 00-red, green-80, blue-00 alpha-80 (transparent)
+
+    </pre>
+    <p>rgb(r, g, b) - red, green, blue</p>
+    <p>rgba(r, g, b, a) - red, green, blue, alpha(transparent)</p>
+    <p>hsl(h, s, l) - hue, saturation, lightness</p>
+    <p>hsla(h, s, l, a) - hue, saturation, lightness, alpha(transparent)</p>
+    <p>hsv(h, s, v) - hue, saturation, value</p>
+    <p>hsva(h, s, v, a) - hue, saturation, value, alpha(transparent)</p>
+
+</body>
+
+</html>
