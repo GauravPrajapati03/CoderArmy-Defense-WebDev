@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block And Inline</title>
+    <link rel="stylesheet" href="blockInline.css">
+</head>
+<body>
+
+    <h1>Block And Inline</h1>
+
+    <pre>
+        
+        Block Elements - h1, div, p, ul, ol, table, form, section, article, header, footer, nav, aside, form, table
+
+        Inline Elements - span, a, img, strong, em, small, b, i, input, br, label, select, iframe
+    </pre>
+    
+    <table border="1" cellpadding="5px" cellspacing="0">
+        <thead style="background-color: aqua;">
+            <tr>
+                <th>Block Element</th>
+                <th>Inline Element</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Always starts on a new line</td>
+                <td>Does not start on a new line</td>
+            </tr>
+            <tr>
+                <td>Take up full width available</td>
+                <td>Takes up only content width/ only necessary width</td>
+            </tr>
+            <tr>
+                <td>Respects width and height</td>
+                <td>Does not respect width and height </td>
+            </tr>
+            <tr>
+                <td>Respects top-bottom margin and padding</td>
+                <td>(Only Horizontal) Partially respects margin and padding (only left and right)</td>
+            </tr>
+            <tr>
+                <td>Can be nested</td>
+                <td>Cannot be nested</td>
+            </tr>
+            <tr>
+                <td>e.g., h1, div, p, ul, ol, table, form</td>
+                <td>e.g., span, a, img</td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">display: inline-block behaves both as block and inline</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Hello World</h2>
+
+
+    <div class="block">
+        I am Block Element
+    </div>
+
+    <span class="span">I am Inline Element</span>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, dolor!</p>
+
+    <br> <br>
+
+    <p class="inlineBlock">Lorem ipsum dolor sit amet.</p>
+
+    <br> <br>
+
+    <span class="first">I am first</span>
+    <span class="first">I am second</span>
+
+</body>
+</html>

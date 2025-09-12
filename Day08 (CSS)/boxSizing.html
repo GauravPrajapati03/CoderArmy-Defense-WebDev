@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Sizing</title>
+    <link rel="stylesheet" href="boxSizing.css">
+</head>
+<body>
+    <h1>Box Sizing</h1>
+    
+    <p>
+        Box Sizing is a CSS property that determines how the width and height of an element are calculated.
+        There are two types of box sizing: border-box and content-box.
+    </p>
+    <ul>
+        <li>
+            <strong>Border Box</strong>: The width and height of an element include the content area and the padding and border areas.
+            <ul>
+                <li>width: content-width + padding-left + padding-right + border-left + border-right</li>
+                <li>height: content-height + padding-top + padding-bottom + border-top + border-bottom</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Content Box</strong>: The width and height of an element only include the content area.
+            <ul>
+                <li>width: content-width</li>
+                <li>height: content-height</li>
+            </ul>
+        </li>
+    </ul>
+    <p>
+        The box-sizing property can be used to switch between border-box and content-box.
+        <pre>
+            .border-box {
+                box-sizing: border-box;
+            }
+
+            .content-box {
+                box-sizing: content-box;
+            }
+        </pre>
+
+        <b>By default the box-sizing property is set to content-box but we change it to border-box in universal selector</b>
+    </p>
+
+    <h2 id="content-box">Hello Coder Army</h2>
+    <h3 id="border-box">Hello Coder Army</h3>
+
+</body>
+</html>

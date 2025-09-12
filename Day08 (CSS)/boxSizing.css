@@ -1,0 +1,18 @@
+#content-box {
+    background-color: lightblue;
+    border: 10px solid black;
+    padding: 20px;
+    margin: 30px;
+    height: 300px;
+    width: 300px;
+    box-sizing: content-box;
+}
+
+#border-box {
+    background-color: rgb(54, 221, 110);
+    border: 10px solid rgb(232, 93, 93);
+    padding: 20px;
+    height: 300px;
+    width: 300px;
+    box-sizing: border-box;
+}
