@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positions</title>
+    <link rel="stylesheet" href="CSSpositions.css">
+</head>
+<body>
+    <h1>CSS Positions</h1>
+    
+    <pre>
+        CSS Positions:
+        There are five CSS positions: static, relative, absolute, fixed, and sticky.
+
+        1. <b>Static</b> - The default position, where the element is not positioned and is placed in the normal document flow.
+
+        2. <b>Relative</b> - The element is positioned relative to its normal position. Offset properties (top, bottom, left, right) are used to offset the element from its normal position.
+
+        3. <b>Absolute</b> - The element is positioned relative to its nearest positioned ancestor (not the body element). Offset properties (top, bottom, left, right) are used to offset the element from its nearest positioned ancestor.
+
+        4. <b>Fixed</b> - The element is positioned relative to the viewport of the browser. Offset properties (top, bottom, left, right) are used to offset the element from the viewport.
+
+        5. <b>Sticky</b> - The element is positioned relative to its nearest positioned ancestor (not the body element), but the element is also "stuck" to the viewport when it is scrolled.
+
+        The top, bottom, left, and right properties are used to offset the element from its normal position.
+
+        <u>Absolute</u> depends on its ancestor for its position
+    </pre>
+
+    <div class="container">
+        <h2 class="static">Position Static</h2>
+        <p>This is a Static one.</p>
+
+        <h2 class="relative">Position Relative</h2>
+        <p>This is a relative one.</p>
+        
+        <h2 class="fixed">Position Fixed</h2>
+        <p>This is a fixed one.</p>
+        
+        <h2 class="sticky">Position Sticky</h2>
+        <p>This is a sticky one.</p>
+        
+        <h2 class="absolute">Position Absolute</h2>
+        <p>This is a absolute one.</p>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* body {
+    background: #000;
+    color: #fff;
+} */
+
+.container {
+    background-color: rgb(199, 134, 49);
+    height: 1080px;
+}
+
+p {
+    font-size: 1.25rem;
+}
+h2 {
+    font-size: 1.75rem;
+}
+
+.static {
+    background-color: aqua;
+    position: static;
+}
+
+.relative {
+    background-color: rgb(230, 36, 36);
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+
+.fixed {
+    background-color: bisque;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.sticky {
+    background-color: yellow;
+    position: sticky;
+    top: 20%;
+}
+
+.absolute {
+    background-color: turquoise;
+    position: absolute;
+    bottom: 20%;
+    right: 30px;
+}

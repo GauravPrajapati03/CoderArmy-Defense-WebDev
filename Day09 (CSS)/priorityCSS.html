@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cascading  Priority</title>
+    
+    <link rel="stylesheet" href="priorityCSS.css">
+
+    <style>
+        h1 {
+            background-color: brown;
+        }
+    </style>
+
+    <!-- <link rel="stylesheet" href="priorityCSS.css">  Style of this will be applied from this not internal css because this behaves like
+    <style>
+        h1 {
+            background-color: blue;
+        }
+    </style> 
+    -->
+
+
+</head>
+<body>
+    
+    <h1>Hello Coder Army</h1>
+
+    <h2 class="myclass" id="myid">Hello Everyone</h2>
+
+    <pre>
+        Cascading Style Sheet(CSS) means it is like a waterfall,
+        where if the style conflicts then the last one wins and it is applied
+
+        <b>Cascading Priority</b>
+
+        1. !important - no matter what, it will be applied
+        2. Inline CSS
+        3. Id Selector
+        4. Class Selector
+        5. Element/Tag Selector
+        6. (If Tie)- Ordering is given priority to the last one/ recently added
+
+        Priority Order: 
+
+        <span class="order">!important > inline > id > class > tag > ordering</span>
+    </pre>
+
+</body>
+</html>

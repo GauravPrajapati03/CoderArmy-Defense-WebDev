@@ -1,0 +1,29 @@
+/* !important will override the inline css */
+
+/* h1 {
+    background-color: red !important; 
+} */
+
+h1 {
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
+
+#myid {
+    color: magenta;
+}
+
+.myclass {
+    color: red;
+}
+
+h2 {
+    color: pink;
+}
+
+.order {
+    font-size: 1.5em;
+    padding: 10px 30px;
+    border: 2px solid black;
+}
