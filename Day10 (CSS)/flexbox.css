@@ -1,0 +1,33 @@
+.container {
+    background-color: beige;
+    height: 80vh;
+    display: flex;
+    justify-content: center;  /* horizontal alignment (main axis) */
+    align-items: center;     /* vertical alignment (cross axis) */
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first {
+    background-color: red;
+}
+
+.second {
+    background-color: green;
+}
+
+.third {
+    background-color: blue;
+}
+
+.fourth {
+    background-color: yellow;
+}
