@@ -1,0 +1,43 @@
+body {
+    background: #000;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    color: #fff;
+}
+
+.box {
+    margin-left: 20px;
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+    background-color: aquamarine;
+    border: 2px solid white;
+    /* box-shadow: 10px 10px blue; */
+    box-shadow: 10px 10px 10px 5px blue;
+    /* box-shadow: inset 10px 10px 10px 10px blue; */
+}
+
+/* box-shadow: x-offset y-offset blur-radius spread-radius color
+
+box-shadow: -10px -10px blue = forms the shadow to opposite side
+
+offset-x : move on x axis to right side (- means opposite side)
+offset-y : move on y axis to bottom side (- means opposite side)
+Blur Radius : to blur the edges
+Spread Radius : to spread the blur effect 
+
+inset - reduces the original content and forms a shadow on the top of the content */
+
+
+.sun {
+    height: 150px;
+    width: 150px;
+    background-color: yellow;
+    margin: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0px 0px 10px 10px rgb(239, 65, 65);
+}

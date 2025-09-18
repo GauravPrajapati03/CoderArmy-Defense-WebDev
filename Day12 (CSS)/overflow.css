@@ -1,0 +1,10 @@
+.container {
+    height: 300px;
+    width: 400px;
+    background-color: blanchedalmond;
+    border: 1px solid #000;
+    /* overflow: hidden; */
+    /* overflow: scroll; */
+    overflow: auto;
+    /* overflow: visible; */
+}
