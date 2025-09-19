@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 5: Forms in HTML</title>
+</head>
+
+<body>
+
+    <header id="top">
+        <nav>
+            <h2>Go To Any Lecture From Here</h2>
+            <ul>
+                <li><a href="index.html">Home Page</a></li>
+                <li><a href="lecture1.html">Lecture 1: Introduction to Internet & Web Development</a></li>
+                <li><a href="lecture2.html">Lecture 2: What is HTML & it's Basic Tags</a></li>
+                <li><a href="lecture3.html">Lecture 3: Nested Lists and Tables</a></li>
+                <li><a href="lecture4.html">Lecture 4: File Path in HTML</a></li>
+                <li><a href="lecture5.html">Lecture 5: Forms in HTML</a></li>
+                <li><a href="lecture6.html">Lecture 6: HTML5 New Tags and Attributes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+
+        <h1>Lecture 5: Forms in HTML</h1>
+        <p>An HTML form is a key element used to collect user input and send it to a server for processing. It consists
+            of various input controls where users enter data, such as text fields, checkboxes, buttons, and more.</p>
+
+
+        <img src="https://imgs.search.brave.com/SHozlrCq_F9sHvqXPWdtquj3tGoS3bsgB_SEu8WQkDE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/em9ob3dlYnN0YXRp/Yy5jb20vc2l0ZXMv/endlYi9pbWFnZXMv/Zm9ybXMvaW5zaWdo/dHMvY29udGFjdC1m/b3JtLXRlbXBsYXRl/cy5wbmc"
+            alt="form" width="80%" height="auto">
+        <section>
+            <h2><u>Form Elements</u></h2>
+
+            <ol>
+                <li>
+                    <h2>&lt;input&gt; Elements</h2>
+                    <p>Used for <i>text, passwords, emails, numbers, checkboxes, radio buttons, files, etc</i>.</p>
+                    <p><strong>Example:</strong></p>
+                    <label>Name:</label>
+                    <input type="text">
+                </li>
+                <li>
+                    <h2>&lt;textarea&gt; Element</h2>
+                    <p><i>Multi-line text input.</i></p>
+                    <p><strong>Example:</strong></p>
+                    <label>Message:</label><br>
+                    <textarea rows="8" cols="50"></textarea>
+                </li>
+
+                <li>
+                    <h2>&lt;select&gt; and &lt;option&gt; Elements</h2>
+                    <p><i>Dropdown list for selecting from multiple options.</i></p>
+                    <p><strong>Example:</strong></p>
+                    <label for="country">Country:</label>
+                    <select>
+                        <option>United States</option>
+                        <option>Canada</option>
+                        <option>India</option>
+                        <option>Dubai</option>
+                        <option>Japan</option>
+                    </select>
+                </li>
+
+                <li>
+                    <h2>&lt;button&gt; and &lt;input type="submit"&gt;</h2>
+                    <p><i>Buttons to send form data or trigger actions.</i></p>
+                    <p><strong>Example:</strong></p>
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button> <br> <br>
+
+                    <details>
+                        <summary><b>Why we use &lt;button type="submit"&gt; instead of &lt;input type="submit"&gt;?</b>
+                        </summary>
+                        <p>Use &lt;button type="submit"&gt; when you want more control over the button’s content and
+                            styling.
+                            Use &lt;input type="submit"&gt; for simple forms where only a basic submit button is needed.
+                        </p>
+                        <p>Using &lt;button&gt; is generally preferred today for flexibility, accessibility, and
+                            semantic</p>
+                    </details>
+                </li>
+
+                <li>
+                    <h2>&lt;fieldset&gt; and &lt;legend&gt;</h2>
+                    <p>Group related elements with a border and caption.</p>
+                    <p><strong>Example:</strong></p>
+                    <fieldset>
+                        <legend>Personal Details</legend>
+                        <label for="fname">First Name:</label>
+                        <input type="text"><br><br>
+                        <label for="lname">Last Name:</label>
+                        <input type="text">
+                    </fieldset>
+                </li>
+
+                <h2>Key Points</h2>
+                <ol>
+                    <li>Use <code>&lt;label&gt;</code> with <code>for</code> attribute linking to input <code>id</code>
+                        to improve accessibility.</li>
+                    <li>The <code>required</code> attribute forces users to fill certain fields before submitting.</li>
+                    <li>Use appropriate <code>input type</code> for validation and better UX.</li>
+                    <li>Forms can be styled with CSS and behavior enhanced with JavaScript.</li>
+                    <li>Avoid nesting <code>&lt;form&gt;</code> elements inside each other.</li>
+                </ol>
+            </ol>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Input Types & Attributes</h2>
+            <p>HTML &lt;input&gt; element supports many types to collect various kinds of user data.</p>
+
+            <h3><u>Common Input Types</u>:</h3>
+
+            <table border="1" cellpadding="10px" cellspacing="0">
+                <thead bgcolor="lightgray">
+                    <tr>
+                        <th>Input Type</th>
+                        <th>Description</th>
+                        <th>Example Code</th>
+                    </tr>
+                </thead>
+                <tbody align="center">
+                    <tr>
+                        <td>text</td>
+                        <td>Single-line text input</td>
+                        <td><code>&lt;input type="text" name="username"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>password</td>
+                        <td>Password input (obscured text)</td>
+                        <td><code>&lt;input type="password" name="pass"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>email</td>
+                        <td>Email input with validation</td>
+                        <td><code>&lt;input type="email" name="email"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>number</td>
+                        <td>Number input with min/max options</td>
+                        <td><code>&lt;input type="number" name="age" min="1" max="99"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>tel</td>
+                        <td>Telephone number</td>
+                        <td><code>&lt;input type="tel" name="phone"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>url</td>
+                        <td>URL input type</td>
+                        <td><code>&lt;input type="url" name="website"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>search</td>
+                        <td>Search box</td>
+                        <td><code>&lt;input type="search" name="query"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>checkbox</td>
+                        <td>Checkbox selection (multiple options)</td>
+                        <td><code>&lt;input type="checkbox" name="subscribe"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>radio</td>
+                        <td>Radio buttons (single choice)</td>
+                        <td><code>&lt;input type="radio" name="gender" value="M"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>file</td>
+                        <td>File select dialog</td>
+                        <td><code>&lt;input type="file" name="resume"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>hidden</td>
+                        <td>Hidden input (not visible, sent with form)</td>
+                        <td><code>&lt;input type="hidden" name="userId" value="123"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>button</td>
+                        <td>Generic clickable button</td>
+                        <td><code>&lt;input type="button" value="Click Me"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>submit</td>
+                        <td>Submits the form</td>
+                        <td><code>&lt;input type="submit" value="Submit"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>reset</td>
+                        <td>Resets the form</td>
+                        <td><code>&lt;input type="reset" value="Reset"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>color</td>
+                        <td>Color picker</td>
+                        <td><code>&lt;input type="color" name="favcolor"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>date</td>
+                        <td>Date picker</td>
+                        <td><code>&lt;input type="date" name="dob"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>datetime-local</td>
+                        <td>Date and time picker (no time zone)</td>
+                        <td><code>&lt;input type="datetime-local" name="appointment"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>month</td>
+                        <td>Month and year picker</td>
+                        <td><code>&lt;input type="month" name="expdate"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>week</td>
+                        <td>Week picker</td>
+                        <td><code>&lt;input type="week" name="week"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>time</td>
+                        <td>Time picker</td>
+                        <td><code>&lt;input type="time" name="alarm"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>range</td>
+                        <td>Slider to select a value within a range</td>
+                        <td><code>&lt;input type="range" name="volume" min="0" max="10"&gt;</code></td>
+                    </tr>
+                    <tr>
+                        <td>image</td>
+                        <td>Image submit button</td>
+                        <td><code>&lt;input type="image" src="submit.png" alt="Submit"&gt;</code></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3><u>Common Input Attributes</u>:</h3>
+
+            <ul>
+                <li><b>name</b>: Name used to identify the input element during form submission.</li>
+                <li><b>id</b>: Unique identifier for the input (useful for labels and scripting).</li>
+                <li><b>value</b>: Specifies the default or current value of the input.</li>
+                <li><b>placeholder</b>: Text shown when input is empty to guide users.</li>
+                <li><b>required</b>: Specifies that the input must be filled before submitting.</li>
+                <li><b>disabled</b>: Disables the input so it cannot be interacted with.</li>
+                <li><b>readonly</b>: Makes the input read-only, not editable by the user.</li>
+                <li><b>min / max</b>: Define minimum and maximum values (for number, date, etc.).</li>
+                <li><b>step</b>: Defines legal intervals for numeric or date/time inputs.</li>
+                <li><b>pattern</b>: Regex pattern for input value validation.</li>
+                <li><b>autocomplete</b>: Suggests previously entered values while typing.</li>
+                <li><b>multiple</b>: Allows selecting multiple files (for <code>&lt;input type="file"&gt;</code>).</li>
+            </ul>
+            </ul>
+
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Example Form with Code and Output: </h2>
+
+            <img src="./assets/formeg.png" alt="form" width="100%" height="auto" border="1px">
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Watch Video</h2>
+            <iframe src="https://www.youtube.com/embed/a4j9R_DvZ8M" width="100%" height="500" frameborder="0"></iframe>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <footer>
+        <a href="#top">Back to Top</a>
+        <p>Follow me on:
+            <a href="https://github.com/GauravPrajapati03" target="_blank">Github</a>, &nbsp;
+            <a href="https://x.com/gauravp012" target="_blank">Twitter</a>, &nbsp;
+            <a href="https://www.linkedin.com/in/gaurav-prajapati03/" target="_blank">LinkedIn</a>
+        </p>
+        <p>&copy; Created with ❤ by Gaurav | All Rights Reserved</p>
+    </footer>
+
+
+
+</body>
+
+</html>

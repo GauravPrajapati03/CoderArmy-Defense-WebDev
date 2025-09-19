@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 3: Nested Lists and Tables</title>
+</head>
+
+<body>
+
+    <header id="top">
+        <nav>
+            <h2>Go To Any Lecture From Here</h2>
+            <ul>
+                <li><a href="index.html">Home Page</a></li>
+                <li><a href="lecture1.html">Lecture 1: Introduction to Internet & Web Development</a></li>
+                <li><a href="lecture2.html">Lecture 2: What is HTML & it's Basic Tags</a></li>
+                <li><a href="lecture3.html">Lecture 3: Nested Lists and Tables</a></li>
+                <li><a href="lecture4.html">Lecture 4: File Path in HTML</a></li>
+                <li><a href="lecture5.html">Lecture 5: Forms in HTML</a></li>
+                <li><a href="lecture6.html">Lecture 6: HTML5 New Tags and Attributes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <h1>Lecture 3: Nested Lists and Tables</h1>
+        <p>Nested lists in HTML allow placing one list inside another, creating a hierarchical or multi-level structure.
+            This is useful for categorizing items or showing subtopics clearly.</p>
+
+        <section>
+            <h2>Nested Lists</h2>
+            <ol>
+                <li>First Level
+                    <ul>
+                        <li>Second Level
+                            <ol>
+                                <li>Third Level</li>
+                                <li>Third Level</li>
+                            </ol>
+                        </li>
+                        <li>Second Level</li>
+                    </ul>
+                </li>
+                <li>First Level</li>
+            </ol>
+
+            <h3><i>List e.g.,</i></h3>
+            <img src="./assets/nested list.png" alt="nested-list" height="auto" width="80%">
+
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Tables</h2>
+            <p>Tables are used to display data in rows and columns, using the following tags:</p>
+
+            <h3><u>Features</u>:</h3>
+            <ul>
+                <li><b>border</b> adds borders to the table and cells.</li>
+                <li><b>cellpadding</b> adds padding inside each cell for readability.</li>
+                <li><b>cellspacing</b> adds space between cells.</li>
+                <li><b>rowspan</b> allows cells to span multiple rows.</li>
+                <li><b>colspan</b> allows cells to span multiple columns.</li>
+                <li><b>align</b> sets the alignment of the table.</li>
+                <li><b>bgcolor</b> sets the background color of the table.</li>
+                <li><b>width</b> sets the width of the table.</li>
+            </ul>
+
+
+
+
+            <h3><i>Table e.g.,</i></h3>
+            <img src="./assets/table.png" alt="table" height="auto" width="80%" border="1px">
+
+            <ul>
+                <li><code>&lt;table&gt;</code>: The container for the entire table.</li>
+                <li><code>&lt;tr&gt;</code> (table row): Defines a row in the table.</li>
+                <li><code>&lt;th&gt;</code> (table header): Defines header cells, usually bold and centered.</li>
+                <li><code>&lt;td&gt;</code> (table data): Defines regular data cells.</li>
+                <li><code>&lt;thead&gt;</code>: Defines the header section of the table.</li>
+                <li><code>&lt;tbody&gt;</code>: Defines the body section of the table.</li>
+                <li><code>&lt;tfoot&gt;</code>: Defines the footer section of the table.</li>
+
+            </ul>
+
+            <img src="./assets/table-eg.png" alt="table-eg" height="500px" width="80%">
+
+            <h3><i>Output of Above Table</i></h3>
+            <table border="1px" cellspacing="0" cellpadding="10px" width="50%" bgcolor="lightblue" align="center">
+                <thead>
+                    <tr>
+                        <th>Header 1</th>
+                        <th>Header 2</th>
+                        <th>Header 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Data 1</td>
+                        <td>Data 2</td>
+                        <td>Data 3</td>
+                    </tr>
+                    <tr>
+                        <td>Data 4</td>
+                        <td>Data 5</td>
+                        <td>Data 6</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Footer 1</td>
+                        <td>Footer 2</td>
+                        <td>Footer 3</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+        </section>
+
+
+
+
+
+        <section>
+            <h2>Watch Video</h2>
+            <iframe src="https://www.youtube.com/embed/AJ4E1zf5tQs" width="100%" height="500" frameborder="0"></iframe>
+        </section>
+
+    </main>
+
+
+
+
+    <hr>
+
+    <footer>
+        <a href="#top">Back to Top</a>
+        <p>Follow me on:
+            <a href="https://github.com/GauravPrajapati03" target="_blank">Github</a>, &nbsp;
+            <a href="https://x.com/gauravp012" target="_blank">Twitter</a>, &nbsp;
+            <a href="https://www.linkedin.com/in/gaurav-prajapati03/" target="_blank">LinkedIn</a>
+        </p>
+        <p>&copy; Created with ❤ by Gaurav | All Rights Reserved</p>
+    </footer>
+
+
+
+</body>
+
+</html>

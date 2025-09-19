@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 6: HTML5 New Tags and Attributes</title>
+</head>
+
+<body>
+
+    <header id="top">
+        <nav>
+            <h2>Go To Any Lecture From Here</h2>
+            <ul>
+                <li><a href="index.html">Home Page</a></li>
+                <li><a href="lecture1.html">Lecture 1: Introduction to Internet & Web Development</a></li>
+                <li><a href="lecture2.html">Lecture 2: What is HTML & it's Basic Tags</a></li>
+                <li><a href="lecture3.html">Lecture 3: Nested Lists and Tables</a></li>
+                <li><a href="lecture4.html">Lecture 4: File Path in HTML</a></li>
+                <li><a href="lecture5.html">Lecture 5: Forms in HTML</a></li>
+                <li><a href="lecture6.html">Lecture 6: HTML5 New Tags and Attributes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <h1>Lecture 6: HTML5 New Tags and Attributes</h1>
+
+        <h4>Topics Covered:</h4>
+        <ul>
+            <li><a href="#audio">Audio Tag</a></li>
+            <li><a href="#video">Video Tag</a></li>
+            <li><a href="#iframe">Iframe Tag</a></li>
+        </ul>
+
+        <section>
+            <ol>
+                <li id="audio">
+                    <h3><u>&lt;audio&gt; Tag</u></h3>
+                    <p>The <code>&lt;audio&gt;</code> tag is used to embed sound content such as music or other audio
+                        streams
+                        directly on a web page.</p>
+                    <h3>Example:</h3>
+                    <pre><code>
+&lt;audio source src="audio-file.mp3" 
+type="audio/mpeg" controls&gt; &lt;/audio&gt;
+                
+                or
+
+&lt;audio controls&gt;
+  &lt;source src="audio-file.mp3" type="audio/mpeg"&gt;
+  &lt;source src="audio-file.ogg" type="audio/ogg"&gt;
+  Your browser does not support the audio element.
+&lt;/audio&gt;
+    </code></pre>
+                    <audio src="./assets/Ram Siya Ram.mp3" controls></audio> <br> <br>
+                    <ul>
+                        <li>The <code>controls</code> attribute displays playback controls (play, pause, volume).</li>
+                        <li>The <code>&lt;source&gt;</code> tag allows multiple formats for browser compatibility.</li>
+                        <li>Common audio formats: MP3, OGG, WAV.</li>
+                        <li>Other attributes include <code>autoplay</code>, <code>loop</code>, <code>muted</code>, and
+                            <code>preload</code>.
+                        </li>
+                    </ul>
+                </li>
+
+                <li id="video">
+                    <h3><u>&lt;video&gt; Tag</u></h3>
+                    <p>The <code>&lt;video&gt;</code> tag embeds video content such as movie clips or video streams.</p>
+                    <h3>Basic Example:</h3>
+                    <pre><code>
+&lt;video source src="video-file.mp3" 
+type="audio/mp4" controls&gt; &lt;/video&gt;
+
+                or
+
+&lt;video width="640" height="360" controls&gt;
+  &lt;source src="video-file.mp4" type="video/mp4"&gt;
+  &lt;source src="video-file.webm" type="video/webm"&gt;
+  Your browser does not support the video tag.
+&lt;/video&gt;
+    </code></pre>
+                    <video controls width="100%" height="auto">
+                        <source src="./assets/file_example_MP4_1920_18MG.mp4" type="video/mp4">
+                    </video> <br> <br>
+
+                    <ul>
+                        <li>The <code>controls</code> attribute provides play, pause, and volume controls.</li>
+                        <li>Attributes include <code>autoplay</code>, <code>loop</code>, <code>muted</code>,
+                            <code>poster</code> (image shown before playback), <code>width</code>, and
+                            <code>height</code>.
+                        </li>
+                        <li>Supports captions through <code>&lt;track&gt;</code> elements.</li>
+                    </ul>
+                </li>
+
+                <li id="iframe">
+                    <h3><u>&lt;iframe&gt; Tag</u></h3>
+                    <p>The <code>&lt;iframe&gt;</code> tag embeds another HTML document inside the current page, often
+                        used for embedding videos (e.g., YouTube), maps, or other external webpages.</p>
+                    <h3>Basic Example (Embedding a YouTube Video):</h3>
+                    <pre><code>
+&lt;iframe width="560" height="315" 
+src="https://www.youtube.com/embed/VIDEO_ID" 
+frameborder="0" allowfullscreen&gt;
+&lt;/iframe&gt;
+    </code></pre>
+                    <ul>
+                        <li><code>src</code>: URL of the embedded content.</li>
+                        <li><code>width</code> and <code>height</code> control the size.</li>
+                        <li><code>allowfullscreen</code> enables full screen.</li>
+                        <li><code>frameborder</code> controls the border visibility.</li>
+                        <li>Can customize allowed features with <code>allow</code> attribute.</li>
+                        <li>We can also display docs, pdfs, other webpages.</li>
+                    </ul>
+                </li>
+
+                <iframe src="https://www.youtube.com/embed/LXb3EKWsInQ" frameborder="0" width="100%"
+                    height="400"></iframe>
+
+            </ol>
+
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Symbols in Webpage</h2>
+
+            <h3><u>Common Symbols</u></h3>
+            <table border="2" cellpadding="5" cellspacing="0">
+                <thead bgcolor="lightgray">
+                    <tr>
+                        <th>Symbol</th>
+                        <th>Description</th>
+                        <th>Entity Name</th>
+                        <th>Decimal Code</th>
+                        <th>Hex Code</th>
+                    </tr>
+                </thead>
+                <tbody align="center">
+                    <tr>
+                        <td>©</td>
+                        <td>Copyright</td>
+                        <td>&amp;copy;</td>
+                        <td>&amp;#169;</td>
+                        <td>&amp;#x00A9;</td>
+                    </tr>
+                    <tr>
+                        <td>®</td>
+                        <td>Registered Trademark</td>
+                        <td>&amp;reg;</td>
+                        <td>&amp;#174;</td>
+                        <td>&amp;#x00AE;</td>
+                    </tr>
+                    <tr>
+                        <td>™</td>
+                        <td>Trademark</td>
+                        <td>&amp;trade;</td>
+                        <td>&amp;#8482;</td>
+                        <td>&amp;#x2122;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;</td>
+                        <td>Less-than (for showing code)</td>
+                        <td>&amp;lt;</td>
+                        <td>&amp;#60;</td>
+                        <td>&amp;#x003C;</td>
+                    </tr>
+                    <tr>
+                        <td>&gt;</td>
+                        <td>Greater-than (for showing code)</td>
+                        <td>&amp;gt;</td>
+                        <td>&amp;#62;</td>
+                        <td>&amp;#x003E;</td>
+                    </tr>
+                    <tr>
+                        <td>&</td>
+                        <td>Ampersand</td>
+                        <td>&amp;amp;</td>
+                        <td>&amp;#38;</td>
+                        <td>&amp;#x0026;</td>
+                    </tr>
+                    <tr>
+                        <td>"</td>
+                        <td>Double Quote</td>
+                        <td>&amp;quot;</td>
+                        <td>&amp;#34;</td>
+                        <td>&amp;#x0022;</td>
+                    </tr>
+                    <tr>
+                        <td>€</td>
+                        <td>Euro Sign</td>
+                        <td>&amp;euro;</td>
+                        <td>&amp;#8364;</td>
+                        <td>&amp;#x20AC;</td>
+                    </tr>
+                    <tr>
+                        <td>♥</td>
+                        <td>Heart Symbol</td>
+                        <td>&amp;hearts;</td>
+                        <td>&amp;#9829;</td>
+                        <td>&amp;#x2665;</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+        </section>
+        <hr>
+
+        <section>
+            <h2>Multi Page Website</h2>
+            <p>Multi-page websites are websites that have multiple pages, often with navigation between them with links.
+            </p>
+            <img src="./assets/multipage.png" alt="multipage" width="50%" height="280px">
+
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Hosting/Deplying an HTML Website</h2>
+            <p>Hosting a website means making your HTML files and associated assets (CSS, images, JavaScript) accessible
+                on the internet so anyone can visit your site using a web browser.</p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Watch Video</h2>
+            <iframe src="https://www.youtube.com/embed/NGYp1zCBthk" width="100%" height="500" frameborder="0"></iframe>
+        </section>
+
+    </main>
+
+
+
+
+    <hr>
+
+    <footer>
+        <a href="#top">Back to Top</a>
+        <p>Follow me on:
+            <a href="https://github.com/GauravPrajapati03" target="_blank">Github</a>, &nbsp;
+            <a href="https://x.com/gauravp012" target="_blank">Twitter</a>, &nbsp;
+            <a href="https://www.linkedin.com/in/gaurav-prajapati03/" target="_blank">LinkedIn</a>
+        </p>
+        <p>&copy; Created with ❤ by Gaurav | All Rights Reserved</p>
+    </footer>
+
+
+
+</body>
+
+</html>

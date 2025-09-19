@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 4: File Path in HTML</title>
+</head>
+
+<body>
+
+    <header id="top">
+        <nav>
+            <h2>Go To Any Lecture From Here</h2>
+            <ul>
+                <li><a href="index.html">Home Page</a></li>
+                <li><a href="lecture1.html">Lecture 1: Introduction to Internet & Web Development</a></li>
+                <li><a href="lecture2.html">Lecture 2: What is HTML & it's Basic Tags</a></li>
+                <li><a href="lecture3.html">Lecture 3: Nested Lists and Tables</a></li>
+                <li><a href="lecture4.html">Lecture 4: File Path in HTML</a></li>
+                <li><a href="lecture5.html">Lecture 5: Forms in HTML</a></li>
+                <li><a href="lecture6.html">Lecture 6: HTML5 New Tags and Attributes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+
+        <section>
+            <h1>File Path</h1>
+            <p>File paths in HTML specify the location of files (like images, stylesheets, scripts) that a webpage needs
+                to load. Paths can be either absolute or relative, and understanding both is crucial for correct linking
+                in web development.</p>
+
+
+            <h2><u>Types of File Paths</u></h2>
+            <ol>
+                <li>
+                    <h3>Absolute File Path</h3>
+                    <ul>
+                        <li>Specify the full URL or full path to the resource.</li>
+                        <li>Independent of the location of your HTML file.</li>
+                        <li>Useful when the resource is hosted externally.</li>
+                    </ul>
+                    <pre><code>&lt;img src="https://example.com/image.jpg"&gt;</code></pre>
+                </li>
+                <li>
+                    <h3>Relative File Path</h3>
+                    <ul>
+                        <li>Specify the path relative to the current HTML file.</li>
+                        <li>Useful when the resource is hosted locally.</li>
+                        <li>Can navigate through directories using special notations.</li>
+                    </ul>
+                    <pre><code>&lt;img src="../images/photo.jpg"&gt;</code></pre>
+                </li>
+            </ol>
+
+            <h2><u>Directory Navigation Symbols</u></h2>
+            <ul type="none">
+                <li><code><b>./</b></code> refers to the Current Directory</li> <br>
+                <li><code><b>../</b></code> refers to the Parent Directory</li> <br>
+                <li><code><b>/</b></code> Root Directory</li> <br>
+            </ul>
+
+            <details>
+                <summary><b>Why does Browsers do not allow showing images using absolute file?</b></summary>
+                <p>Browsers do not allow showing images using absolute file paths referring to local files
+                <pre>(like file:///C:/images/pic.jpg)</pre> due to security restrictions built into modern web browsers.
+                Hence, Absolute local file path references are blocked in browsers to protect user security and privacy,
+                enforce proper web sandboxing, and ensure portable, consistent web content delivery.</p>
+            </details>
+
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>HTML Boilerplate Code</h2>
+            <p>An HTML boilerplate is a basic template or starting structure for an HTML document that includes
+                essential elements and best practices to ensure proper rendering and compatibility in browsers.</p>
+
+            <h3><u>Purpose of HTML Boilerplate</u></h3>
+            <ul>
+                <li>Provides a standardized foundation for new web projects.</li>
+                <li>Includes necessary HTML5 elements, meta tags, and structure.</li>
+                <li>Saves time and ensures consistency across multiple pages or projects.</li>
+                <li>Helps maintain best practices for accessibility, responsiveness, and SEO.</li>
+                <li>Ensures your pages render correctly on all browsers and devices.</li>
+                <li>Sets up responsiveness for mobile and varied screen sizes.</li>
+                <li>Follows modern HTML5 standards and accessibility guidelines.</li>
+                <li>Provides a solid, maintainable starting template for faster development.</li>
+            </ul>
+
+            <img src="./assets/html-boilerplate.png" alt="html-boilerplate" height="auto" width="80%">
+
+            <h3><u>Explanation</u></h3>
+            <ul>
+                <li><code>&lt;!DOCTYPE html&gt;</code>: Declares the document type and HTML version (HTML5 here).</li>
+                <li><code>&lt;html lang="en"&gt;</code>: Root element with language attribute for accessibility and SEO.
+                </li>
+                <li><code>&lt;head&gt;</code>: Contains metadata like character set, viewport for mobile, title, and
+                    links to CSS and favicon.</li>
+                <li><code>&lt;body&gt;</code>: Contains the visible content of the webpage.</li>
+                <li>Linking CSS and JavaScript files enables separating styling and behavior from content.</li>
+            </ul>
+
+
+
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Semantic Elements</h2>
+            <p>Semantic elements clearly describe their meaning for both browsers and developers, improving
+                accessibility, SEO, and code clarity.</p>
+
+            <h3>&lt;header&gt; Tag</h3>
+            <ul>
+                <li>Represents introductory content or a group of navigational links.</li>
+                <li>Typically contains site logo, title, main navigation menu.</li>
+                <li>Can be used multiple times on a page (for sections/articles).</li>
+
+                <img src="./assets/header.png" alt="semantic-header" height="auto" width="90%">
+            </ul>
+
+            <h3>&lt;footer&gt; Tag</h3>
+            <ul>
+                <li>Defines a footer section for a document or section.</li>
+                <li>Usually contains contact info, copyright info, links, author details.</li>
+                <li>Can also be used multiple times on a page.</li>
+
+                <img src="./assets/footer.png" alt="semantic-footer" height="auto" width="90%">
+            </ul>
+
+            <h3>Other Common Semantic Elements</h3>
+            <table border="1" cellspacing="0" cellpadding="10px">
+                <thead>
+                    <tr>
+                        <th>Tag</th>
+                        <th>Purpose</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>&lt;main&gt;</td>
+                        <td>Represents the main content of the page (only one per page)</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;nav&gt;</td>
+                        <td>Contains major navigation links</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;section&gt;</td>
+                        <td>Defines sections of content grouped thematically</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;article&gt;</td>
+                        <td>Represents independent content like blog posts or news articles</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;aside&gt;</td>
+                        <td>Content tangentially related to main content (e.g., sidebars, ads)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Div, span, id, class</h2>
+
+            <ol>
+                <li>
+                    <strong>&lt;div&gt; Tag</strong>
+                    <ul>
+                        <li>A generic container for grouping other HTML elements.</li>
+                        <li>It has no meaning by itself and is used for styling or scripting.</li>
+                        <li>Typically used to create sections or wrappers in layouts.</li>
+
+                        <img src="./assets/div.png" alt="semantic-div" height="auto" width="90%">
+                    </ul>
+                </li>
+                <li>
+                    <strong>&lt;span&gt; Tag</strong>
+                    <ul>
+                        <li>Inline container similar to div, but it does not start a new line.</li>
+                        <li>Used to style or target small parts of text or inline elements.</li>
+
+                        <img src="./assets/span.png" alt="semantic-span" height="auto" width="90%">
+                    </ul>
+                </li>
+                <li>
+                    <strong>id and class Attributes</strong>
+                    <ul>
+                        <li><strong>id</strong> uniquely identifies a single element on the page. Should be unique per
+                            page.</li>
+                        <li><strong>class</strong> groups multiple elements that share similar styles or behaviors.</li>
+                        <li>Both are used in CSS and JavaScript for targeting elements.</li>
+
+                        <img src="./assets/id.png" alt="semantic-id" height="auto" width="90%">
+                        <img src="./assets/class.png" alt="semantic-class" height="auto" width="90%">
+                    </ul>
+                </li>
+            </ol>
+
+
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Watch Video</h2>
+            <iframe src="https://www.youtube.com/embed/k78lNSAB8VY" width="100%" height="500" frameborder="0"></iframe>
+        </section>
+
+    </main>
+
+
+
+
+    <hr>
+
+    <footer>
+        <a href="#top">Back to Top</a>
+        <p>Follow me on:
+            <a href="https://github.com/GauravPrajapati03" target="_blank">Github</a>, &nbsp;
+            <a href="https://x.com/gauravp012" target="_blank">Twitter</a>, &nbsp;
+            <a href="https://www.linkedin.com/in/gaurav-prajapati03/" target="_blank">LinkedIn</a>
+        </p>
+        <p>&copy; Created with ❤ by Gaurav | All Rights Reserved</p>
+    </footer>
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+<p>This is a <span class="highlight">highlighted</span> word inside a paragraph.</p>
