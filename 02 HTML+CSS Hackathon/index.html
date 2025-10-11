@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&family=Story+Script&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Strike</title>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="./assets/logo-removebg-preview.png" class="logoimg" alt="Strike" />
+      <!-- <h1>Strike</h1> -->
+    </div>
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+    <nav class="nav">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#tutorial">Tutorials</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#hackathon">Hackathon</a></li>
+      </ul>
+    </nav>
+    <div class="login">
+      <button>
+        <i class="ri-login-circle-line"></i>
+        Login
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <div class="home" id="home">
+      <div class="left">
+        <h1>Be a Part of <span class="gradient-text">STRIKE</span> Army</h1>
+        <p>A community of coders, making the world a better place. Learn, build, and grow with the best developers in
+          the industry.</p>
+        <div class="links">
+          <i class="linkedin ri-linkedin-box-fill"></i>
+          <i class="youtube ri-youtube-line"></i>
+          <i class="instagram ri-instagram-line"></i>
+        </div>
+        <div class="learn">
+          <button class="learning">Start Learning</button>
+          <button class="demo">
+            <img src="https://simpleicons.org/icons/youtube.svg" class="youtubesvg" alt="">
+            Watch Demo</button>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="container">
+          <div class="cube">
+            <div class="face front"></div>
+            <div class="face back"></div>
+            <div class="face right"></div>
+            <div class="face left"></div>
+            <div class="face top"></div>
+            <div class="face bottom"></div>
+          </div>
+        </div>
+      </div>
+  </main>
+
+
+  <section>
+    <div class="moving">
+      <span>Strike is Launching on 18th October</span>
+    </div>
+  </section>
+
+
+  <div id="tutorial">
+    <h2>Our <span>Premium Courses</span></h2>
+    <p>Discover our comprehensive learning programs designed by industry experts to advance your career and technical
+      skills.</p>
+
+    <div class="features">
+      <div class="first">
+        <i class="fa-solid fa-user-graduate"></i>
+        <h3>202k+</h3>
+        <h4>Students</h4>
+      </div>
+      <div class="first">
+        <i class="fa-solid fa-book-open"></i>
+        <h3>4+</h3>
+        <h4>Courses</h4>
+      </div>
+      <div class="first">
+        <i class="fa-solid fa-chalkboard-user"></i>
+        <h3>2+</h3>
+        <h4>Instructors</h4>
+      </div>
+    </div>
+  </div>
+
+  <div class="line"></div>
+
+
+  <div id="courses">
+    <h2>What We Offer</h2>
+    <section class="card-grid">
+      <!-- Card 1 -->
+      <div class="card-container">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="./assets/webdev.png" alt="">
+              <div class="card-desc">
+                <h2>Web Development + Blockchain + AI...</h2>
+                <p>by Rohit Negi & Aditya Tandon</p>
+                <p>Complete LIVE Course covering Web Dev, Blockchain, AI, System Design & DSA</p>
+              </div>
+            </div>
+            <div class="flip-card-back">
+              <h2>Web Development + Blockchain + AI + System Design + DSA</h2>
+              <p>Complete LIVE Course covering Web Dev, Blockchain, AI, System Design & DSA</p>
+              <ul type="none">
+                <li>Live Web Development Sessions</li>
+                <li>Blockchain Development</li>
+                <li>Pre-recorded DSA Content</li>
+                <li>Industry Grade Projects</li>
+                <li>System Design Fundamentals</li>
+              </ul>
+              <button>Enroll Now <span><i class="ri-arrow-right-up-line"></i></span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card-container">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="./assets/HLD.png" alt="">
+              <div class="card-desc">
+                <h2>High Level Design (HLD) Masterclass</h2>
+                <p>by Aditya Tandon</p>
+                <p>Deep dive into scalable systems architecture, real-world feature design, and comprehensive end-to-...</p>
+              </div>
+            </div>
+            <div class="flip-card-back">
+              <h2>High Level Design (HLD) Masterclass</h2>
+              <p>Complete LIVE Course covering Web Dev, Blockchain, AI, System Design & DSA</p>
+              <ul type="none">
+                <li>Live Web Development Sessions</li>
+                <li>Blockchain Development</li>
+                <li>Pre-recorded DSA Content</li>
+                <li>Industry Grade Projects</li>
+                <li>System Design Fundamentals</li>
+              </ul>
+              <button>Enroll Now <span><i class="ri-arrow-right-up-line"></i></span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card-container">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="./assets/dsaPaid.png" alt="">
+              <div class="card-desc">
+                <h2>Data Structures & Algorithms (DSA)</h2>
+                <p>by Rohit Negi</p>
+                <p>Master DSA concepts and advanced problem solving techniques to crack FAANG interviews with confidence.</p>
+              </div>
+            </div>
+            <div class="flip-card-back">
+              <h2>Web Development + Blockchain + AI + System Design + DSA</h2>
+              <p>Complete LIVE Course covering Web Dev, Blockchain, AI, System Design & DSA</p>
+              <ul type="none">
+                <li>Live Web Development Sessions</li>
+                <li>Blockchain Development</li>
+                <li>Pre-recorded DSA Content</li>
+                <li>Industry Grade Projects</li>
+                <li>System Design Fundamentals</li>
+              </ul>
+              <button>Enroll Now <span><i class="ri-arrow-right-up-line"></i></span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="card-container">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="./assets/cpp_e4dmot.png" alt="">
+              <div class="card-desc">
+                <h2>DSA Course in C++</h2>
+                <p>by Rohit Negi</p>
+                <p>The Ultimate Guide to Mastering Data Structures & Algorithms in C++.</p>
+              </div>
+            </div>
+            <div class="flip-card-back">
+              <h2>Web Development + Blockchain + AI + System Design + DSA</h2>
+              <p>Complete LIVE Course covering Web Dev, Blockchain, AI, System Design & DSA</p>
+              <ul type="none">
+                <li>Live Web Development Sessions</li>
+                <li>Blockchain Development</li>
+                <li>Pre-recorded DSA Content</li>
+                <li>Industry Grade Projects</li>
+                <li>System Design Fundamentals</li>
+              </ul>
+              <button>Enroll Now <span><i class="ri-arrow-right-up-line"></i></span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="card-container">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="./assets/web_hooznk.png" alt="">
+              <div class="card-desc">
+                <h2>Web Development Full Course</h2>
+                <p>by Rohit Negi</p>
+                <p>Build Anything: The All-in-One Web Development Bootcamp.</p>
+              </div>
+            </div>
+            <div class="flip-card-back">
+              <h2>Web Development + Blockchain + AI + System Design + DSA</h2>
+              <p>Complete LIVE Course covering Web Dev, Blockchain, AI, System Design & DSA</p>
+              <ul type="none">
+                <li>Live Web Development Sessions</li>
+                <li>Blockchain Development</li>
+                <li>Pre-recorded DSA Content</li>
+                <li>Industry Grade Projects</li>
+                <li>System Design Fundamentals</li>
+              </ul>
+              <button>Enroll Now <span><i class="ri-arrow-right-up-line"></i></span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="card-container">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="./assets/genai_isnfd6.png" alt="">
+              <div class="card-desc">
+                <h2>GenAI Course</h2>
+                <p>by Rohit Negi</p>
+                <p>Unlocking the Secrets of Generative Al: From Concepts to Code.</p>
+              </div>
+            </div>
+            <div class="flip-card-back">
+              <h2>Web Development + Blockchain + AI + System Design + DSA</h2>
+              <p>Complete LIVE Course covering Web Dev, Blockchain, AI, System Design & DSA</p>
+              <ul type="none">
+                <li>Live Web Development Sessions</li>
+                <li>Blockchain Development</li>
+                <li>Pre-recorded DSA Content</li>
+                <li>Industry Grade Projects</li>
+                <li>System Design Fundamentals</li>
+              </ul>
+              <button>Enroll Now <span><i class="ri-arrow-right-up-line"></i></span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="card-container">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="./assets/lld_ab1qch.png" alt="">
+              <div class="card-desc">
+                <h2>System Design Course</h2>
+                <p>by Aditya Tandon</p>
+                <p>Learn Low-Level Design and System Design concepts from scratch to advanced.</p>
+              </div>
+            </div>
+            <div class="flip-card-back">
+              <h2>Web Development + Blockchain + AI + System Design + DSA</h2>
+              <p>Complete LIVE Course covering Web Dev, Blockchain, AI, System Design & DSA</p>
+              <ul type="none">
+                <li>Live Web Development Sessions</li>
+                <li>Blockchain Development</li>
+                <li>Pre-recorded DSA Content</li>
+                <li>Industry Grade Projects</li>
+                <li>System Design Fundamentals</li>
+              </ul>
+              <button>Enroll Now <span><i class="ri-arrow-right-up-line"></i></span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="line"></div>
+
+
+  <div id="about">
+    <h2 class="abt-heading">Meet Your <span>Instructors</span></h2>
+    <p class="abt-desc">Learn from industry experts with real-world experience and proven track records</p>
+
+    <div class="instructors">
+      <div class="card">
+        <div class="profile-pic">
+          <img src="./assets/rohitnegi.jpg" alt="Profile">
+        </div>
+
+        <div class="info">
+          <h2>Rohit Negi <span>🏆</span></h2>
+          <div class="tagline">
+            <span class="tag highlight">Founder & Lead Instructor</span>
+            <span class="tag">Ex-@Uber</span>
+          </div>
+
+          <div class="tagline">
+            <span class="tag">IIT Graduate</span>
+            <span class="tag">2 Cr+ Package</span>
+            <span class="tag">Industry Expert</span>
+          </div>
+
+          <h4 class="desc">
+            Heartfelt Problem Solver, Instructor, and Visionary Leader. Got Highest Placement in India of 2 Cr +.
+            Post Graduate from IIT G, GATE-CSE'20 AIR – 202.
+            </h>
+
+            <div class="buttons">
+              <button class="btn primary">Start Learning</button>
+              <button class="btn outline">Know More</button>
+            </div>
+        </div>
+
+        <div class="slider">
+          <div class="dot active"></div>
+          <div class="dot"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="banner">
+    <img src="./assets/strike-bg.png" alt="">
+  </div>
+
+
+  <div id="contact">
+    <div class="left-part">
+      <h2 class="contact-heading">Get in <span>Touch</span></h2>
+      <p class="contact-desc">Have questions about our courses? Want to discuss your learning journey? We're here to
+        help you succeed.</p>
+      <form class="form">
+        <div class="one">
+          <div class="two">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter your name">
+          </div>
+          <div class="two">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email">
+          </div>
+        </div>
+        <div class="one">
+          <div class="two">
+            <label for="phone">Phone No</label>
+            <input type="tel" id="Phone" placeholder="Enter Phone No">
+          </div>
+          <div class="two">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" placeholder="Subject">
+          </div>
+        </div>
+        <div class="message">
+          <label for="message">Message</label>
+          <textarea rows="4" id="message" placeholder="Enter your message"></textarea>
+        </div>
+        <button type="submit">Send Message ➤</button>
+      </form>
+    </div>
+
+    <div class="right-part">
+      <img src="./assets/download.png" alt="">
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <h2 class="footer-head">STRIKE - CoderArmy</h2>
+        <h4 class="footer-desc">
+          A community of coders, making the world a better place through technology and education.
+        </h4>
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Tutorials</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Stay Connected</h3>
+        <h4>
+          Don’t let your dreams stay dreams. Build your skills with us and turn them into reality.
+        </h4>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      Copyright © 2025 by <span style="color:#b57bff; font-weight:600;">CoderArmy</span> | All Rights Reserved.
+    </div>
+  </footer>
+
+</body>
+
+</html>
