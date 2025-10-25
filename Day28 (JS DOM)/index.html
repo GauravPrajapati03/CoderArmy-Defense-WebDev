@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="background-color: orange; color: brown;" id="first">Meaning of DOM - HTML file converted into JS Object</h1>
+    <h2 id="second" class="three">Hello Everyone</h2>
+    
+
+    <p>Purpose: a have a html file and i want to manipulate the content using JavaScript</p>
+    <p>To do this we need to change and give the object to JS because JS works well with Objects</p>
+
+    <ul class="three">
+        <li>first</li>
+        <li>second</li>
+        <li>third</li>
+    </ul>
+
+    <p>How it will look like - </p>
+    <pre>
+        HTML element converted to Object
+
+        &lt;h1 style="background-color: orange; color: brown;" id="first"&gt;Strike is Coming Soon&lt;/h1&gt;
+
+        let heading = {
+            tagName: H1,
+            id: first,
+            style: {
+                background-color: orange,
+                color: brown
+            }
+            textContent: Strike is Coming Soon
+            ...and many more properties
+        }
+
+        So we can change this using JS
+
+        heading.textContent = "Hello everyone";
+        heading.style.color = green;
+    </pre>
+
+    <h2>Window - is a Global Object created by browser and also provides many properties/methods helpful for us and also helps in converting the tags into Objects</h2>
+
+
+    <h3>console.log, .dir, .alert, .open, .close -> is not a part of JS it is a part of Browser window object</h3>
+
+
+    <h3>DOM Tree is in the form of Object(key-value form)</h3>
+    <pre>
+        let body = HTMLCollection [body] {
+            tagName: body,
+
+            childNodes : NodeList(27) [text, h1#first, text, h2#second, text, p, text, p, text, p, text, pre, text, h2, text, h3, text, h3, text, pre, text, script, text, comment, text, script, text]
+            
+            children : HTMLCollection(12) [h1#first, h2#second, p, p, p, pre, h2, h3, h3, pre, script, script, first: h1#first, second: h2#second]
+
+            style: {
+                background-color: pink,
+            },
+            
+            ...and many more properties
+        }
+    </pre>
+
+    <h4>
+        document.getElementById -> is a method in document
+    </h4>
+    <p>If we didnt had this then we would have to use -</p>
+    <p>const myhead = document.documentElement.children[1].childNodes[1]  (to select the h1 heading element)</p>
+
+    <h3>Difference between innerHTML, innerText, textContent</h3>
+
+    <h4 id="mycontent">My Content <span style="display: none;" id="hello">is this</span></h4>
+
+    <pre>
+        temp.innerHTML  My Content &lt;span style="display: none;" id="hello"&gt;is this&lt;/span&gt;
+        temp.innerText  My Content
+        temp.textContent  My Content is this
+    </pre>
+
+    <h4>Selecting the elements of html</h4>
+    <ul>
+        <li>.getElementById</li>
+        <li>.getElementByClassName</li>
+        <li>.getElementByTagName</li>
+    </ul>
+
+    <ul>
+        Using CSS Selectors
+        <li>.querySelector (Selects the first one)</li>
+        <li>.querySelectorAll</li>
+    </ul>
+
+    <p>When we use element selectors we get the array of HTMLCollections but when we use css selectors then we get array of NodeList</p>
+    <pre>
+        Reason:
+
+    1 Element Selectors Examples: 
+    document.getElementsByTagName('div') 
+    document.getElementsByClassName('box')
+    document.getElementsByName('username')
+        
+        *These methods return a live HTMLCollection.
+        *A live collection automatically updates when the DOM changes (e.g., if you add or remove matching elements).
+
+    2 CSS Selectors Examples:
+    document.querySelectorAll('.box')
+    document.querySelector('#main')
+        
+        *These methods use CSS-style selectors.
+        *querySelector() returns a single element (the first match).
+        *querySelectorAll() returns a static NodeList.
+        *A static collection means it does not update automatically when the DOM changes.
+
+
+    So Why the Difference?
+    
+        1) It’s mostly historical and design-based:The older DOM Level 1/2 APIs (getElementsByTagName, etc.) were made before CSS selector support existed. They were implemented to give a "live view" of the DOM.
+        2) The newer DOM Level 3 Selectors API (querySelector, querySelectorAll) was introduced later, focusing on CSS-style querying.
+        3) For performance and predictability reasons, it returns static results instead of live ones.
+
+<span style="background-color: aqua; font-size: 1rem;">*** What "live" means: If you add a new &lt;p&gt; to the page after you've selected them, the allParagraphs collection will automatically update to include it.***</span>
+    </pre>
+
+    <script>
+        const heading = document.getElementById('first');
+        console.dir(heading);
+        console.log(`typeof heading => `, typeof heading)
+
+        const myhead = document.documentElement.children[1].childNodes[1]
+
+        console.log(`heading.innerHTML `, heading.innerHTML);
+        console.log(`heading.innerText `, heading.innerText);
+        console.log(`heading.textContent `, heading.textContent);
+        
+        const temp = document.getElementById('mycontent');
+        console.log(temp);
+        console.log(`temp.innerHTML `, temp.innerHTML);
+        console.log(`temp.innerText `, temp.innerText);
+        console.log(`temp.textContent `, temp.textContent);
+
+        const li = document.getElementsByTagName('li');
+        // for converting the HTMLCollection to Array use spread
+        const arr = [...li]
+
+        // iterate over li
+        for(let a of li) {
+            console.log(a)
+        }
+        
+    </script>
+</body>
+</html>
