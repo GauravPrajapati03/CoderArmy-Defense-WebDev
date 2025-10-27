@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element CRUD</title>
+
+    <!-- Script tag also works in head -->
+    <!-- Putting the script tag in head is considered best practice with async/defer keyword -->
+    <!-- <script>
+        console.log("script in head");
+    </script> -->
+    <script src="./elementCRUD.js" defer></script>
+
+</head>
+<body style="background-color: black; color: white;">
+    <h1 id="hello">Hello Everyone</h1>
+
+    
+    <ul id="items"></ul>
+
+    <h3 id="del">To be deleted</h3>
+
+    <ul id="list">
+        <li>Jan</li>
+        <li>Feb</li>
+        <li>Mar</li>
+    </ul>
+
+    <ul id="myList"></ul>
+
+    <!-- Generally we put the script tag here before body closing tag  -->
+     <!-- <script src="./elementCRUD.js"></script> -->
+</body>
+
+<!-- Script tag works out of body because the browser puts it in the body tag while rendering the page -->
+
+<!-- <script>
+    console.log("heiiii")
+</script> -->
+</html>
