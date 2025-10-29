@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        #par{
+            display: flex;
+            gap: 10px;
+        }
+        .child {
+            height: 150px;
+            width: 150px;
+        }
+
+        #grandparent {
+            height: 300px;
+            width: 300px;
+            background: green;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #parent {
+            height: 200px;
+            width: 200px;
+            background: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #child {
+            height: 100px;
+            width: 100px;
+            background: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Events</h1>
+    <p>Eg: Like there is a house it is static the doorbell is the trigger to ring the bell(causes an event to happen) the listener is the event listener(Code that “listens” for a specific event to occur) and the action which the listener takes after the bell rings is the event Handler(The function that runs when the event occurs)</p>
+
+    <!-- In this we have to call () the function onclick and we do not use this method because we should write the JS code in JS file -->
+    <!-- <h2 id="change" onclick="handleClick()">Hello Everyone(Click Me)</h2> -->
+    <h2 id="change">Method 2 (Click Me)</h2>
+    
+    <h2 id="content">Method 3 (Click Me)</h2>
+
+    <button id="btn">Click Me</button>
+    <p id="text">Waiting for action...</p>
+
+    <div id="par">
+        <div id="child1" class="child" style="background-color: red;">first</div>
+        <div id="child2" class="child" style="background-color: blue;">second</div>
+        <div id="child3" class="child" style="background-color: yellow;">third</div>
+        <div id="child4" class="child" style="background-color: green;">fourth</div>
+    </div>
+
+    <!-- Event Bubbling -->
+    <h2>Event Bubbling - use the parent element to apply event listeners to all the child element at once, so that we do not have to apply event listeners on each child individually and it automatically applies if we add more children</h2>
+    <div id="grandparent">
+        <div id="parent">
+            <div id="child"></div>
+        </div>
+    </div>
+
+    <!-- Remove Event Listener -->
+    <h2>Remove Event Listener</h2>
+    <div id="myparent" style="display: flex;">
+        <div id="child1" class="child" style="background-color: red;">First</div>
+        <div id="child2" class="child" style="background-color: blue;">Second</div>
+        <div id="child3" class="child"
+        style="background-color: green;">Third</div>
+    </div>
+
+    <!-- Mouse Events -->
+    <h2>Mouse Events</h2>
+    <button id="click">Click</button>
+    <button id="dblClick">dblClick</button>
+    <button id="mousedown">Mouse Down</button>
+    <button id="mouseup">Mouse Up</button>
+    <button id="move">Mouse Move</button>
+    <button id="enter">Mouse Enter</button>
+    <button id="leave">Mouse Leave</button>
+    <button id="over">Mouse Over</button>
+    <button id="out">Mouse Out</button>
+
+    <!-- Keyboard Events -->
+    <h2>Keyboard Events</h2>
+
+
+    <!-- Form Events -->
+    <h2>Form Events</h2>
+    <form>
+        <label for="email">Email:</label>
+        <input class="input" type="email" id="email" name="email">
+        <label for="password">Password:</label>
+        <input class="input" type="password" id="password" name="password">
+        <input type="submit">
+    </form>
+    <p>'Change' event is fired once when we are done typing and click somewhere or enter or tab</p>
+    
+    <!-- Event (e) Object -->
+    <h2>e Object</h2>
+    <button id="event">Event</button>
+    
+    <ul id="item-list">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+
+    <script src="./events.js"></script>
+</body>
+</html>
