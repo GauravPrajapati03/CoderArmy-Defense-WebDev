@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Loop</title>
+</head>
+<body>
+    <h1>JS is Single Threaded Synchronous Language</h1>
+    <p>means js can perform only one task at a time</p>
+    
+    <h2>Synchronous means blocking</h2>
+
+    <h2>When JS is performing a heavy task then all other tasks are waiting and when it completes it execution then other tasks run synchronously</h2>
+
+    <h2>Web API</h2>
+    <p>API in simple term is just like a function call whose definition we dont know</p>
+
+    <h4>In web dev, Web API is a set of rules and protocols that allows different software applications to communicate with each other over the web or,</h4>
+    <h4>A Web API is like a messenger that lets one application request data or services from another application through the internet</h4>
+
+    <h3>Types of common Web APIS</h3>
+    <ul>
+        <li>Timer Apis(setInterval, setTimeout,...)</li>
+        <li>Network Apis(fetch, XMLHttpRequest)</li>
+        <li>DOM Events Apis(addEventListeners,..)</li>
+        <li>File Apis (Node.js)</li>
+    </ul>
+
+    <button id="btn">Click Me</button>
+
+    <h2>JS never waits for any task</h2>
+    
+    <h2>JS is Single Threaded, but browsers window is multi-threaded</h2>
+
+    <h2>JS Event loop is a mechanism that allows JS(single threaded) to handle asynchronous operations without blocking the main thread</h2>
+
+    <h2>Call Stack(JS executes code line by line), functions are pushed onto the stack and called and popped off the stack when finished execution</h2>
+
+    <h4>TASK QUEUES (Waiting area) <br>
+Microtask Queue (Promises) - HIGHER PRIORITY <br>
+Macrotask Queue (setTimeout, setInterval) - LOWER PRIORITY</h4>
+    
+    <h2>Web API(Browser)</h2>
+    <ul>
+        <li>Handles Async tasks like: 
+            <ul>
+                <li>setTimeout</li>
+                <li>fetch</li>
+                <li>DOM Events</li>
+                <li>File System(Node.js)</li>
+            </ul>
+        </li>
+        <li>These run outside JS call Stack</li>
+    </ul>
+
+    <h2>Callback/Task Queue(Macro Task Queue)</h2>
+    <ul>
+        <li>Stores callbacks from async operations like:
+            <ul>
+                <li>setTimeout</li>
+                <li>DOM Events</li>
+                <li>setInterval</li>
+            </ul>
+        </li>
+    </ul>
+    
+    <h2>Micro Task Queue</h2>
+    <ul>
+        <li>Stores Microtasks from:
+            <ul>
+                <li>promises(.then)</li>
+                <li>Mutation Observers</li>
+            </ul>
+        </li>
+        <li>Microtasks has higher priority than macro tasks</li>
+    </ul>
+
+    <pre>
+🔁 How the Event Loop Actually Works
+
+1. JS executes code in the call stack.
+When encountering an async function:
+
+2. JS sends it to Web APIs.
+Once the async operation completes:
+
+3. Web API pushes its callback to the Task Queue (or Microtask Queue, depending on type).
+
+4. Event Loop constantly checks:
+If the call stack is empty → it pushes tasks from queues into the stack.
+
+5. Microtasks run first, then macro tasks
+    </pre>
+
+
+    <h2>JavaScript doesn't know or care if something is sync/async. It just calls functions and handles return values. The function's implementation (in browser) determines the behavior! 🎯</h2>
+
+    <script src="app.js"></script>
+</body>
+</html>
