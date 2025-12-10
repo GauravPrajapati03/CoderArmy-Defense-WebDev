@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Calculator</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;box-sizing: border-box;
+        }
+        .container {
+            background: #000;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: bisque;
+            font-size: 1.5rem;
+        }
+
+        form input {
+            padding: 10px 18px;
+            border-radius: 10px;
+            outline: none;
+            background-color: azure;
+        }
+        form button {
+            padding: 10px 18px;
+            border-radius: 10px;
+            outline: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: grey;
+            color: #fff;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <h1 style="text-decoration: underline;">Love Calculator</h1> <br>
+        <form>
+            <label for="boy">Boy: </label>
+            <input type="text" id="boy" name="boy" required> <br><br>
+            
+            <label for="girl">Girl: </label>
+            <input type="text" id="girl" name="girl" required> <br><br>
+
+            <button type="submit">Calculate</button> <br><br>
+        </form>
+        <h2>Result: </h2>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
