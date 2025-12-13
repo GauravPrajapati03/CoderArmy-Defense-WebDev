@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promises in JS</title>
+</head>
+<body>
+    <h1>Promises</h1>
+    <p>A promise represents the eventual completion(or failure) of asynchronous operation and its returning/resulting value</p>
+    
+    <div id="parent"></div>
+
+    <h2>JSON vs JS Object</h2>
+    <p>JSON is a way of communication between web applications JSON format is understood by all languages and JS Object is only in JavaScript</p>
+
+    <p style="color: orangered;">JSON is a data format for data exchange and storage, while JavaScript objects are used for data manipulation and logic within code</p>
+
+    <p>It is language-independent and follows a strict syntax, requiring all keys and string values to be enclosed in double quotes, disallowing trailing commas and comments. JSON supports only a limited set of data types: strings, numbers, booleans, arrays, objects, and null, and cannot contain functions or executable code.</p>
+
+    <p>To convert between them, JavaScript provides the JSON.parse() method to convert a JSON string into a JavaScript object, and JSON.stringify() to convert a JavaScript object into a JSON string. This conversion enables seamless data transfer while preserving the structure and integrity of the data.</p>
+
+    <h2>JS Object to JSON format</h2>
+<pre>
+// JS Obj to JSON
+const user = {
+    name: "Gaurav",
+    age: 20,
+    profession: "software developer",
+}
+
+const jsonformat = JSON.stringify(user); 
+console.log(jsonformat);
+
+// JSON to JS Obj
+const Jsondata = `{
+    "name": "Aman",
+    "age": 30,
+    "city": "pune"
+}`;
+
+const Objformat = JSON.parse(Jsondata)
+console.log(Objformat);
+</pre>
+
+    <script src="script.js"></script>
+</body>
+</html>
