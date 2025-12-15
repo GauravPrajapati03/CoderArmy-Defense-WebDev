@@ -204,6 +204,7 @@ function deliverOrder(orderDetails) {
 
 // Promise better then callback
 
+<<<<<<< HEAD
 // placeOrder(orderDetails)
 //     // .then(data => console.log(data));
 //     .then((orderDetails) => prepareOrder(orderDetails))
@@ -386,3 +387,12 @@ Promise.resolve("Success")
     })
     .then((data) => console.log(data))
     .catch(err => console.log(err.message));
+=======
+placeOrder(orderDetails)
+    // .then(data => console.log(data));
+    .then((orderDetails) => prepareOrder(orderDetails))
+    .then((orderDetails) => pickUpOrder(orderDetails))
+    .then((orderDetails) => deliverOrder(orderDetails))
+    .catch((err) => console.log(err))
+    .finally(() => console.log(`Order Completed`));
+>>>>>>> 6887572f2fdde260cd7846fd635f9d1cfce316ef
