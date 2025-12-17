@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototypes and Classes</title>
+</head>
+<body>
+    <h1>Prototypes in JS</h1>
+    <p>Prototypes means that the object inherits some properties or methods from its elder parent in the prototype chaining</p>
+    <p>In JS Object don't have copies of methods; they have a link to another objects</p>
+    <h3>First the Object looks into it if it doesn't find then it looks at its top-level Object and if it still doesn't find it then it go to one more level up and it comes till 'null' then it is not present or does not exists</h3>
+    <h2>This all is happening because of DRY(Do not Repeat Yourself) Principle which says that only write the code once which is reusable so when we write a function in Objects then it goes in the prototypes directly so that other functions can also use it if they inherit this Object Prototypes</h2>
+
+    <h3>Everything is at the end coming to Objects Prototypes the Objects, Arrays, Functions.Hence Everything is Object in JS </h3>
+
+
+    <h2>Classes</h2>
+    <p>Classes are a template for creating objects, it describes the properties and methods that the object will have</p>
+    <h3>Constructors</h3>
+    <p>Constructors are functions that are used to initialize the properties of an object</p>
+    <p>When we print the object it will print the data members but not the methods</p>
+
+    <script src="app.js"></script>
+</body>
+</html>
