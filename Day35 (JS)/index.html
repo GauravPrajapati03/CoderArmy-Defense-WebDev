@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async await in JS</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #000;
+            color: #fff;
+        }
+        
+        #container {
+            width: 75%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .heading {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 2.2rem;
+        }
+
+        .user {
+            width: 150px;
+            text-align: center;
+            border: 1px solid greenyellow;
+            border-radius: 5px;
+            padding: 5px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .user:hover {
+            transform: scale(1.1);
+        }
+
+        .userImg {
+            width: 100%;
+            object-fit: cover;
+        }
+        .name {
+            margin: 5px 0;
+        }
+
+        .anchor {
+            text-decoration: none;
+            color: orange;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        #displayInfo {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.6);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .details {
+            margin: auto;
+            position: relative;
+            width: 50%;
+            height: 70%;
+            background-color: rgba(0, 0, 0, 0.625);
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid greenyellow;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 1.5rem;
+            overflow-x: hidden;
+            scrollbar-width: none;
+        }
+        .modalImg {
+            width: 300px;
+            margin-bottom: 10px;
+            object-fit: cover;
+        }
+        #tag {
+            color: orange;
+        }
+
+        .details p {
+            padding-bottom: 10px;
+        }
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            cursor: pointer;
+            font-size: 40px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- <h1>Async await in JS</h1> -->
+    <h1 class="heading">Github Users</h1>
+    <div id="container"></div>
+    <section id="displayInfo">
+        <div class="details">
+            <div class="close">&times;</div>
+
+            <img src="" class="modalImg" alt="">
+            <p><span id="tag">Name</span>: <span id="modalName"></span></p>
+            <p><span id="tag">Id</span>: <span id="modalId"></span></p>
+            <p><span id="tag">Login</span>: <span id="modalLogin"></span></p>
+            <p><span id="tag">twitter_username</span>: <span id="modaltwitter"></span></p>
+            <p><span id="tag">public_repos</span>: <span id="modalRepos"></span></p>
+            <p><span id="tag">public_gists</span>: <span id="modalGists"></span></p>
+            <p><span id="tag">followers</span>: <span id="modalFollowers"></span></p>
+            <p><span id="tag">following</span>: <span id="modalFollowing"></span></p>
+            <p><span id="tag">location</span>: <span id="modalLocation"></span></p>
+            <p><span id="tag">type</span>: <span id="modalType"></span></p>
+            <p><span id="tag">user_view_type</span>: <span id="modalViewType"></span></p>
+            <p><span id="tag">site_admin</span>: <span id="modalAdmin"></span></p>
+            <p><span id="tag">blog</span>: <span id="modalBlog"></span></p>
+            <p><span id="tag">company</span>: <span id="modalCompany"></span></p>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
