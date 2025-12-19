@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This Keyword, apply, call, bind</title>
+</head>
+<body>
+    <h1>This Keyword, apply, call, bind in JS</h1>
+    <h2>** window is the global object and is only available in browser and not in node.js environment</h2>
+    <h2>** The global object is also available in node.js which is called by the 'global' keyword object and this global object is recognized by the browsers</h2>
+    <h2>The global object not the part of JavaScript so it is called by different names in different environments</h2>
+    <h2>For pointing the global object in browser as well as in node.js we use the <u>'globalThis'</u> keyword</h2>
+    <h2>We should avoid to hardcode values and make our code robust</h2>
+
+
+    <h2>strict vs non-strict mode</h2>
+    <ul>
+        <li>Earlier The philosophy was, "Don't stop the code from running, even if something looks wrong. Just make a guess and keep going." This is Non-Strict Mode, often called "sloppy mode."</li>
+        <li>This causes 'silent' errors because code might run, but it might be doing something completely different. The problem is that it hides potential bugs</li>
+        <li>The First Principle of Strict Mode: Its purpose is to change "sloppy" JavaScript that has silent errors or "bad syntax" into code that throws immediate, obvious errors. It helps you write better, safer code by forcing you to be more explicit.</li>
+    </ul>
+
+    <h3>Strict mode features</h3>
+    <ul>
+        <li>
+            <h3>1. Prevents Accidental Global Variables</h3>
+            <ul>
+                <li>In non-strict mode, if you assign a value to a variable that hasn't been declared, JavaScript "helpfully" creates that variable on the global object (window). This is a huge source of bugs.</li>
+            </ul>
+        </li>
+        <li>
+            <h3>2. Changes the Behavior of this</h3>
+            <ul>
+                <li>In non-strict mode, this defaults to the global Object (window).</li>
+                <li>In strict mode, this is undefined. This prevents from accidentally modifying the global Object.</li>
+            </ul>
+        </li>
+        <li>
+            <h3>3. Prohibits Duplicate Parameter Names</h3>
+            <p>Its a bad practice and strict mode prohibits it.</p>
+            <ul>
+                <li>In Non-strict mode the last parameter wins and there is no error</li>
+                <li>In strict-mode, This is a syntax error and the code won't run</li>
+            </ul>
+        </li>
+        <li>
+            <h3>4. Makes eval() Safer</h3>
+            <p>The eval() function is powerful and dangerous because it can execute arbitrary strings as code. Strict mode puts a cage around it.</p>
+            <ul>
+                <li>In Non-strict mode eval() can create a new variable in its surrounding scope</li>
+                <li>In strict mode, variables created in the eval() call stays inside the eval()s scope</li>
+            </ul>
+        </li>
+        <li>
+            <h3>5. delete myVar</h3>
+            <p>'delete' cannot be called on an identifier in strict mode.</p>
+            <ul>
+                <li>In Non-strict mode, no errors</li>
+                <li>In strict mode, 'SyntaxError: Delete of an unqualified identifier in strict mode.'</li>
+            </ul>
+        </li>
+        <li>
+            <h3>6. Octal numbers</h3>
+            <p>Octal number are those of binary octal numbers</p>
+            <ul>
+                <li>In Non-strict mode, no errors and prints the number representing it</li>
+                <li>In strict mode, 'SyntaxError: Octal literals are not allowed in strict mode'</li>
+            </ul>
+        </li>
+    </ul>
+    <h2>Still 'use strict' is being used</h2>
+    <ol>
+        <li>JavaScript Modules (import/export) are always in strict mode.</li>
+        <li>Code inside a `class` body is always in strict mode.</li>
+    </ol>
+
+
+
+    <h1>This Keyword</h1>
+    <ul>
+        <li>In Non-Strict mode
+            <ul>
+                <li>In node.js environment this points to the {} empty object</li>
+                <li>In browser environment this points to the window object</li>
+            </ul>
+        </li>
+        <li>In Strict mode
+            <ul>
+                <li>In node.js environment this points to the {} empty object</li>
+                <li>In browser environment this points to the window object</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h1>Call, Apply, Bind Method</h1>
+    <p>These methods are used to when working with functions, they ley u control the value of this inside a function</p>
+    <ul>
+        <li><b>Call</b> Invokes the function immediately, passing arguments one by one</li>
+        <li>func.call(thisArg, arg1, arg2)</li>
+        <li><b>Apply</b> Invokes the function immediately, but arguments are passed as an array</li>
+        <li>func.apply(thisArg, [arg1, arg2])</li>
+        <li><b>Bind</b> Returns a new function with this permanently set, without invoking it right away</li>
+        <li>const newFunc = func.bind(thisArg, arg1, arg2, ...)</li>
+        <li>Note: here the "this" points to the invoking object</li>
+    </ul>
+
+    <h1>const user = {} -> this brackets are not lexical scope scope these are data structures brackets</h1>
+    <h2>Only function() {} and class and if statement are lexical/block scope</h2>
+
+
+    <h2>Arrow Functions</h2>
+    <p>Arrow functions do not have their own this. They inherit this from their parent scope, just like any other variable.</p>
+    
+
+    <button type="button" id="btn" style="padding: 10px 24px; background-color: bisque;">Click</button>
+
+    <script src="app.js"></script>
+</body>
+</html>
